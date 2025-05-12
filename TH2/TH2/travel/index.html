@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Oleo+Script:wght@700&family=Quicksand:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="shared.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Travel Goals</title>
+  </head>
+  <body>
+
+    <style>
+      footer {
+        background-color: black;
+      }
+
+      .icon {
+        display: flex;
+        
+        width: 45px;
+        height: 45px;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        font-family: "Raleway", "Quicksand", "Oleo";
+        color: yellow;
+      }
+
+      .title {
+        font-family: "Raleway";
+      }
+
+      div.joes {
+        font-family: "Oleo";
+        position: relative;
+        width: 460px;
+        height: 230px;
+      }
+      .ocean, p {
+        position: absolute;
+        width: 100%;
+      }
+      p {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        bottom: 0;
+        left: 0;
+        box-sizing: border-box;
+        color: #fff;
+        margin: 0;
+      }
+    </style>
+
+    <header>
+      <div id="page-logo">
+        <a href="/index.html" class="title">TRAVEL GOALS</a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/places.html">Destinations</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="hero">
+        <div id="hero-content" class="joes">
+          <img src="images/ocean.jpg" alt="ocean.jpg" class="ocean">
+          <h1>Joe's Travel Page</h1>
+          <p>Let's explore the world together!</p>
+          <a href="/places.html">Discover places</a>
+        </div>
+      </section>
+      <section id="highlights">
+        <h2>Highlights</h2>
+        <ul id="destinations">
+          <li class="destination">
+            <img
+              src="images/miami.jpg"
+              alt="Miami streets on sunny day"
+            />
+            <p>Miami <strong>USA</strong></p>
+          </li>
+          <li class="destination">
+            <img
+              src="images/munich.jpg"
+              alt="Munich stadium in winter"
+            />
+            <p>Munich <strong>Germany</strong></p>
+          </li>
+          <li class="destination">
+            <img
+              src="images/barcelona.jpg"
+              alt="Palm beach in Barcelona"
+            />
+            <p>Barcelona <strong>Spain</strong></p>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+        <a href="https://www.instagram.com">
+            <img src="extra-files/icons/insta.png" alt="Instagram logo" class="icon"
+          /></a>
+          <a href="https://www.facebook.com">
+            <img src="extra-files/icons/facebook.png" alt="Facebook logo" class="icon"
+          /></a>
+    </footer>
+  </body>
+</html>

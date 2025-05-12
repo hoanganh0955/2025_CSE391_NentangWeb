@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Form with Flexbox</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      padding: 40px;
+    }
+
+    .contact-form {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #aaa;
+      background-color: #fff;
+    }
+
+    .contact-form h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .row {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .row input {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .row button {
+      flex: 0 0 150px;
+      border-radius: 5px;
+    }
+
+
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      width: 100%;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+
+    textarea {
+      height: 150px;
+      resize: vertical;
+    }
+
+    button {
+      background-color: #4DB8FF;
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    button:hover {
+      background-color: #3498db;
+    }
+
+    .note {
+      flex: 0 0 auto;
+      text-align: left;
+      align-self: center;
+      font-size: 12px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="contact-form">
+    <h2>Get in touch with us by filling contact form below</h2>
+    <form>
+      <div class="row">
+        <input type="text" placeholder="* Enter your full name" required>
+        <input type="email" placeholder="* Enter your email address" required>
+      </div>
+      <input type="text" placeholder="Enter your subject">
+      <textarea placeholder="* Your message here..." required></textarea>
+      <div class="row">
+        <button type="submit">Send message</button>
+        <span class="note">* Please fill all required form field, thanks!</span>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
